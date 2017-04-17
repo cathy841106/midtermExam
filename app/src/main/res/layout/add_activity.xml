@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:text="@string/tvAdName"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="45dp"
+            android:id="@+id/tvAdName"
+            android:layout_weight="0.50" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_weight="1"
+            android:id="@+id/etAdName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:text="@string/tvAdAge"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="46dp"
+            android:id="@+id/tvAdAge"
+            android:layout_weight="0.52" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etAdAge"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_weight="0.04">
+
+        <TextView
+            android:text="@string/tvAdSex"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="58dp"
+            android:id="@+id/tvAdSex"
+            android:layout_weight="0.50" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/etAdSex"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_weight="0.02">
+
+        <TextView
+            android:text="@string/tvAdMajor"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="55dp"
+            android:id="@+id/tvAdMajor"
+            android:layout_weight="0.50" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/etAdMajor"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="77dp">
+
+        <Button
+            android:text="@string/btAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onAddClick"
+            android:id="@+id/btAdd"
+            android:layout_weight="0.05" />
+
+        <Button
+            android:text="@string/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBackClick"
+            android:id="@+id/btBack2"
+            android:layout_weight="0.05" />
+    </LinearLayout>
+</LinearLayout>
